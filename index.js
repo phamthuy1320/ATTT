@@ -1,3 +1,4 @@
+// ELGamal
 var luyThuaNguyenThuy = require('./luyThuaNguyenThuy.js');
 var powMod = require('./utils/powMod.js');
 const {w2n, n2w} = require('./data.js');
@@ -6,20 +7,20 @@ var soHoaChuoi = require('./utils/soHoaChuoi.js');
 var modInverse = require('./utils/modInverse.js');
 var powModInverse = require('./utils/powModInverse.js');
 
-//p la so nguyen to co 7 chu so
-// var p = 1000003
-// var Anpha = luyThuaNguyenThuy(p);
-// var a = 131099;
-// var Beta = powMod(Anpha, a, p);
-// var k = 1310;
-// const str = 'PHAMTHITHUY';
-
 // p la so nguyen to co 7 chu so
-var p = 100000000000000000003;
+var p = 1000003
 var Anpha = luyThuaNguyenThuy(p);
 var a = 131099;
 var Beta = powMod(Anpha, a, p);
 var k = 1310;
+const str = 'PHAMTHITHUY';
+
+// p la so nguyen to co 7 chu so
+// var p = 100000000000000000003;
+// var Anpha = luyThuaNguyenThuy(p);
+// var a = 131099;
+// var Beta = powMod(Anpha, a, p);
+// var k = 1310;
 // Đất nước có trong những cái ngày xửa ngày xưa mẹ thường hay kể
 const str = 'DATNUOCCOTRONGNHUNGCAINGAYXUANGAYXUAMETHUONGHAYKE';
 
