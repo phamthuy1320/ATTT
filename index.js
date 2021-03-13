@@ -5,13 +5,25 @@ var soNguyenTo = require('./utils/soNguyenTo.js');
 var soHoaChuoi = require('./utils/soHoaChuoi.js');
 var modInverse = require('./utils/modInverse.js');
 var powModInverse = require('./utils/powModInverse.js');
-var p = 1000003
+
+//p la so nguyen to co 7 chu so
+// var p = 1000003
+// var Anpha = luyThuaNguyenThuy(p);
+// var a = 131099;
+// var Beta = powMod(Anpha, a, p);
+// var k = 1310;
+// const str = 'PHAMTHITHUY';
+
+// p la so nguyen to co 7 chu so
+var p = 100000000000000000003;
 var Anpha = luyThuaNguyenThuy(p);
 var a = 131099;
 var Beta = powMod(Anpha, a, p);
 var k = 1310;
+// Đất nước có trong những cái ngày xửa ngày xưa mẹ thường hay kể
+const str = 'DATNUOCCOTRONGNHUNGCAINGAYXUANGAYXUAMETHUONGHAYKE';
 
-const str = 'PHAMTHITHUY';//Chuoi can so hoa
+//Chuoi can so hoa
 const x = soHoaChuoi(str)%p;
 console.log('x:',x);
 
@@ -31,7 +43,6 @@ const GiaiMa = (y1, y2) =>{
   // var d2 = modInverse(Math.pow(y1,a),p);
   d2 = powModInverse(y1,a,p)
   var d = (d1*d2)%p;
-  console.log(d1, d2,d)
   return d;
 }
 
