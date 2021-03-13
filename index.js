@@ -22,7 +22,7 @@ const str = 'PHAMTHITHUY';
 // var Beta = powMod(Anpha, a, p);
 // var k = 1310;
 // Đất nước có trong những cái ngày xửa ngày xưa mẹ thường hay kể
-const str = 'DATNUOCCOTRONGNHUNGCAINGAYXUANGAYXUAMETHUONGHAYKE';
+//const str = 'DATNUOCCOTRONGNHUNGCAINGAYXUANGAYXUAMETHUONGHAYKE';
 
 //Chuoi can so hoa
 const x = soHoaChuoi(str)%p;
